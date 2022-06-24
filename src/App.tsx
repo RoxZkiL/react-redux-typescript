@@ -15,10 +15,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>0</h1>
-      <button>Deposit</button>
-      <button>Withdraw</button>
-      <button>Bankrupt</button>
+      <h1>{state}</h1>
+      <button onClick={() => depositMoney(1000)}>Deposit</button>
+      <button onClick={() => withdrawMoney(1000)}>Withdraw</button>
+      <button onClick={() => bankrupt()}>Bankrupt</button>
     </div>
   );
 }
