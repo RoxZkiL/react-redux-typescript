@@ -1,15 +1,16 @@
+import { ActionType } from "../action-types/index";
 interface DepositAction  {
-    type: "deposit"
-    payload: number
+        type: ActionType.DEPOSIT
+        payload: number
     }
     
-    interface WithdrawAction { // interface contiene la definición de métodos y propiedades, no su implementación.
-        type: "withdraw"
+    interface WithdrawAction { 
+        type: ActionType.WITHDRAW
         payload: number
     }
     
     interface BankruptAction {
-        type: "bankrupt"
+        type: ActionType.BANKRUPT
     }
 
 export type Action = DepositAction | WithdrawAction | BankruptAction
